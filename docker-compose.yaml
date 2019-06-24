@@ -26,14 +26,4 @@ services:
       - MODULE=search-module.xml
     volumes:
       - ./output/search-result:/usr/share/udemy/test-output
-  book-flight-module:
-    image: ganyindia/selenium-docker
-    depends_on:
-      - chrome
-      - firefox
-    environment:
-      - BROWSER=chrome
-      - HUB_HOST=hub
-      - MODULE=book-flight-module.xml
-    volumes:
-      - ./output/book-flight-module-result:/usr/share/udemy/test-output
+
